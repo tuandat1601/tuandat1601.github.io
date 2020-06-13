@@ -29,16 +29,7 @@ void nhap(struct Sinhvien *&s,int *n){
 	fflush(stdin);
 	printf("\nNgay, thang, nam: ");
 	scanf("%d%d%d",&(s+i)->day,&(s+i)->month,&(s+i)->nam);
-	/*printf("\nNgay sinh:  ");
-	fflush(stdin);
-     gets(s[i].day);
-	printf("\nThang sinh:  ");
 	
-	gets(s[i].month);
-	fflush(stdin);
-	printf("\nNam sinh:  ");
-	
-	gets(s[i].nam);*/
 	fflush(stdin);
     printf("\nNhap DTB: ");
     scanf("%f",&(s+i)->dtb);
@@ -183,7 +174,7 @@ void sapxepdiemgiam(Sinhvien *s,int n){
 	 fclose(fOut);
  }	
  void docFile( Sinhvien *s) {
-	FILE *fOut = fopen("C:/Users/admin/Documents/PROGRAM-C & C++/tun", "+r");
+	FILE *fOut = fopen("C:/Users/admin/Documents/PROGRAM-C & C++/tun.txt", "+r");
 	int i = 0;
 	if(fOut) {
 		for(;;) {
